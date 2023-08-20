@@ -16,7 +16,7 @@ struct StocksAPIExecutable {
         do {
             let chart = try await stockAPI.fetchChart(symbol: "AAPL", range: .y10)
 //            let quotes = try await stockAPI.searchQuotes(query: "tesla")
-            print(chart)
+            print(chart) 
         } catch {
             print(error.localizedDescription)
         }
